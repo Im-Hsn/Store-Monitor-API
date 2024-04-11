@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Flask",
+            "type": "debugpy",
+            "request": "launch",
+
+            // This is the path to the Python interpreter in my Anaconda environment
+            "python": "C:\\Users\\hassa\\anaconda3\\envs\\LOOP\\python.exe",
+
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "app.py",
+                "FLASK_ENV": "development",
+
+                "FLASK_DEBUG": "1",
+                //Debug mode should be 0 usually because detailed error pages can reveal information about your code that
+                //you might not want to expose. And the automatic reloading of the
+                //server can be problematic if untested changes are made to the code.
+                
+                "PYTHONPATH": "${workspaceRoot}"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        }
+    ]
+}
