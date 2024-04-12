@@ -39,7 +39,7 @@ This project is a Flask application that generates reports on store uptime and d
 - models/
     - data_model.py
 - report_data/ (directory to save CSV files from GET requests)
-- services/ (directory that contains the data as csv)
+- csv_files/ (directory that contains the data as csv)
 - services/
     - report_cache.py
     - report_generator.py
