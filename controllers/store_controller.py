@@ -1,4 +1,4 @@
-from flask import Blueprint, Response, jsonify, request, send_file
+from flask import Blueprint, Response, jsonify, request
 from typing import Dict, Union
 from services.report_routes import trigger_report, get_report
 

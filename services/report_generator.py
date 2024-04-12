@@ -118,9 +118,6 @@ def generate_report(report_id: str):
         report_cache[report_id] = {'status': 'Running'}  # Mark the report as running in the cache
         report_df = calculate_uptime_downtime()
 
-        # report_file_path = f"report_data/report_{report_id}.csv"
-        # report_df.to_csv(report_file_path, index=False)
-
         report_cache[report_id]['report'] = report_df
         
         report_cache[report_id]['status'] = 'Complete'  # Mark the report as complete in the cache
