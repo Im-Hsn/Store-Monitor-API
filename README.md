@@ -114,9 +114,3 @@ This project is a Flask application that generates reports on store uptime and d
 - Designed a report generation system that calculates store uptime and downtime based on business hours and store status observations.
 - Implemented logic to extrapolate uptime and downtime from periodic polls to the entire time interval within business hours.
 - Ensured that uptime and downtime calculations are accurate and considerate of time zone differences.
-
-#### Code Quality and Optimization:
-
-- Structured the code in a modular and well-organized manner, adhering to best practices and handling corner cases effectively.
-- Employed type hints and documentation to enhance code readability and maintainability.
-- Optimized code for efficient database reads and CSV output generation, ensuring that it runs within a reasonable amount of time.
